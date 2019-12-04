@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slova</title>
+</head>
+<body>
+<center>
+    <p>60</p>
+    <br>
+    <p id="1"></p>
+<input type='text' id="2">
+<button onclick="more()">Next</button>
+    <p id="3"></p>
+</center>
+</body>
+<script>
+    score=0
+    a = ["гидроаэроионизация","чиуауа","процедура","притягательность","автомотовелофототелерадиомонтёр","грёзоблаженствующий","самообороноспособность","превысокомногорассмотрительствующий","водогрязеторфопарафинолечение","человеконенавистничество","цистопростатовезикулэктомия","бальнеофизиотерапевтический","Аэрогаммаспектрометрический","стереоэлектроэнцефалография","томопневморетроперитонеография","Превысокомногорассмотрительствующий","Превысокомногорассмотрительствующий","Водогрязеторфопарафинолечение","Переосвидетельствующимися","Интернационализирующимися"]
+    function more() {
+        if (document.getElementById("1").innerHTML == document.getElementById("2").value) {
+            score++
+        }
+        if (document.getElementById("1").innerHTML == document.getElementById("2").value) {
+            score--
+        }
+        i = Math.floor(Math.random() * 20) + 1
+        document.getElementById('1').innerHTML = a[i]
+    }
+</script>
+</html>
